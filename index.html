@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of Aldella Vania, executive and virtual assistant based in Bogor, West Java.">
+<title>Aldella Vania – Executive & Virtual Assistant</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F7F6; --surface:#FFFFFF; --ink:#12302E; --muted:#4F6663; --line:#D5DFDC;
+  --accent:#E3A02F; --accent-ink:#12302E; --band:#12302E; --band-ink:#F5F7F6;
+  --head:"Bricolage Grotesque","Trebuchet MS",sans-serif; --body:"Source Sans 3",Calibri,Arial,sans-serif;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1B1A; --surface:#152826; --ink:#E8EFED; --muted:#9DB3AF; --line:#27403D;
+    --band:#1B3532; --band-ink:#F2F6F5; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1B1A; --surface:#152826; --ink:#E8EFED; --muted:#9DB3AF; --line:#27403D;
+  --band:#1B3532; --band-ink:#F2F6F5; color-scheme:dark;
+}
+*{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--body)}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--head);line-height:1.12;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+header.hero{padding:4.5rem 0 3.5rem}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:700;letter-spacing:-.02em;max-width:14ch}
+.hero .role{font-family:var(--head);font-size:1.25rem;font-weight:500;margin:1.1rem 0 0;color:var(--muted)}
+.hero p.lead{max-width:38rem;font-size:1.2rem;margin:1.5rem 0 0}
+.facts{display:flex;flex-wrap:wrap;gap:.6rem;margin:2rem 0 0;padding:0;list-style:none}
+.facts li{background:var(--accent);color:var(--accent-ink);font-weight:600;padding:.45rem .9rem;border-radius:2rem;font-size:.95rem}
+
+section{padding:3.25rem 0}
+section h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:1.75rem;font-weight:700}
+.band{background:var(--band);color:var(--band-ink)}
+.band .muted{color:inherit;opacity:.8}
+
+.services{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:.9rem;overflow:hidden}
+.service{background:var(--surface);padding:1.4rem 1.5rem}
+.service h3{font-size:1.2rem;margin-bottom:.35rem}
+.service p{margin:0;color:var(--muted)}
+@media(min-width:700px){.services{grid-template-columns:1fr 1fr}}
+
+.timeline{list-style:none;margin:0;padding:0 0 0 1.4rem;border-left:3px solid var(--accent)}
+.timeline li{position:relative;padding:0 0 2rem 1rem}
+.timeline li::before{content:"";position:absolute;left:-2.05rem;top:.5rem;width:.95rem;height:.95rem;border-radius:50%;background:var(--accent);border:3px solid var(--band)}
+.timeline h3{font-size:1.3rem}
+.timeline .when{font-weight:600;opacity:.8;margin:.15rem 0 .5rem}
+.timeline p{margin:0;max-width:40rem}
+
+.two{display:grid;gap:2.5rem}
+@media(min-width:700px){.two{grid-template-columns:1fr 1fr}}
+.edu{margin:0 0 1.4rem}
+.edu h3{font-size:1.15rem}
+.edu p{margin:.15rem 0 0;color:var(--muted)}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none}
+.tools li{border:1.5px solid var(--ink);padding:.35rem .85rem;border-radius:.5rem;font-weight:600}
+.proof{border-left:4px solid var(--accent);padding:.2rem 0 .2rem 1rem;margin:0 0 1.5rem}
+.proof strong{font-family:var(--head);font-size:1.3rem;display:block}
+
+.duties{margin:0;padding:0;list-style:none;border-bottom:1px solid var(--line)}
+.duty{display:grid;gap:.25rem 2rem;padding:1.25rem 0;border-top:1px solid var(--line)}
+.duty h3{font-size:1.25rem}
+.duty p{margin:0;color:var(--muted);max-width:36rem}
+.duty.lead h3{font-size:1.6rem}
+@media(min-width:700px){.duty{grid-template-columns:18rem 1fr;align-items:baseline}}
+footer a{font-weight:600}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer h2{margin-bottom:.8rem}
+footer p{max-width:34rem;margin:0 0 .5rem}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <h1>Aldella Vania</h1>
+    <p class="role">Executive and virtual assistant</p>
+    <p class="lead">I keep budgets, invoices, meetings and cross-team plans moving so that executives and busy teams can focus on decisions, not follow-ups.</p>
+    <ul class="facts">
+      <li>3+ years of executive support</li>
+      <li>Top performance rating, four semesters running</li>
+      <li>English (working proficiency, TOEIC 570) and Bahasa Indonesia</li>
+    </ul>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>What a typical week looks like</h2>
+    <ul class="duties">
+      <li class="duty lead"><h3>30+ people in my team</h3><p>I manage the team’s administration alongside my work for the Vice President.</p></li>
+      <li class="duty"><h3>The VP’s daily schedule</h3><p>Meetings and appointments managed day by day, with follow-up actions tracked until they close.</p></li>
+      <li class="duty"><h3>Documents</h3><p>Reports and presentations prepared, and confidential business records kept in order.</p></li>
+      <li class="duty"><h3>Travel arrangements</h3><p>Domestic and international travel for the VP planned and booked from start to finish.</p></li>
+      <li class="duty"><h3>Email and calls</h3><p>Emails answered and followed up, the inbox organised for the VP, and calls made to book appointments.</p></li>
+      <li class="duty"><h3>SAP invoice and PO processing</h3><p>Invoices and purchase orders processed and tracked in SAP, accurately and on time.</p></li>
+      <li class="duty"><h3>Meetings and events</h3><p>Management meetings, workshops and corporate events supported with logistics and documentation, including the marketing forum and a townhall of 500+ people, following up with other sub-directorate secretaries on budget, schedule and consumption.</p></li>
+      <li class="duty"><h3>Budget monitoring in SAP</h3><p>Budget and procurement tracked in SAP, with high-volume data entry at 100% accuracy.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What I can take off your plate</h2>
+    <div class="services">
+      <div class="service"><h3>Executive support</h3><p>Day-to-day support for a Vice President: calendar, email, calls, travel and follow-ups.</p></div>
+      <div class="service"><h3>Budget and invoice admin</h3><p>Budget administration, procurement, PO processing and invoice tracking in SAP, handled accurately and on time.</p></div>
+      <div class="service"><h3>Cross-team alignment</h3><p>Aligning annual budget plans, campaigns and operational review meetings across several marketing teams.</p></div>
+      <div class="service"><h3>Corporate and legal admin</h3><p>Corporate and legal secretarial work, from document handling to HR and finance administration.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Where I’ve worked</h2>
+    <ol class="timeline">
+      <li>
+        <h3>Secretary, Pricing &amp; Profitability Strategic Integration</h3>
+        <p class="when">Telkomsel · May 2023 to now</p>
+        <p>Executive support to a Vice President, including budget, procurement and SAP invoices. My sub-directorate is the point that aligns all the marketing sub-directorates, so I work closely with project management on RKAP (annual budget plan), campaign and ORM (Operational Review Meeting) alignment. As a PMO, my directorate handles 3 divisions, and I align them on individual goals, RKAP and ORM.</p>
+      </li>
+      <li>
+        <h3>Corporate &amp; Legal Secretary</h3>
+        <p class="when">Merdeka Copper Gold Tbk · Sep to Nov 2022</p>
+        <p>Supported corporate governance for the Board of Directors, maintained corporate agreements, and monitored regulatory developments and compliance.</p>
+      </li>
+      <li>
+        <h3>Secretary &amp; HR Finance Admin</h3>
+        <p class="when">SIPLN · Feb to May 2022</p>
+        <p>Payroll administration, petty cash and financial records, employee records, and travel arrangements for the team.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap two">
+    <div>
+      <h2>Results</h2>
+      <div class="proof"><strong>P1 rating, four semesters in a row</strong>The highest performance rating at Telkomsel, 2024 to 2025.</div>
+      <div class="proof"><strong>GPA 3.85</strong>Bachelor of Business Management, Bina Nusantara University.</div>
+      <h2 style="margin-top:2.25rem">Tools</h2>
+      <ul class="tools"><li>SAP</li><li>Microsoft Office</li><li>Google Workspace</li><li>Google Calendar and Drive</li><li>Power BI</li><li>Canva</li><li>Remote collaboration tools</li></ul>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <div class="edu"><h3>Bachelor of Business Management</h3><p>Bina Nusantara University, 2024 to present</p></div>
+      <div class="edu"><h3>Diploma in Office Administration</h3><p>STIKS Tarakanita, 2019 to 2023 · GPA 3.59</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <h2>Let’s work together</h2>
+    <p>Based in Bogor, West Java, and available for remote support in English or Bahasa Indonesia.</p>
+    <p>Reach out with what you need handled, and I’ll reply with how I can help.</p>
+    <p><a href="mailto:aldellavan@gmail.com">aldellavan@gmail.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
